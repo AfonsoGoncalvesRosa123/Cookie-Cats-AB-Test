@@ -1,0 +1,191 @@
+{
+  "sanity_checks": {
+    "rows": 90189,
+    "duplicate_userids": 0,
+    "missing_values": 0,
+    "n_control": 44700,
+    "n_treatment": 45489,
+    "share_control": 0.49562585237667567,
+    "srm_chi2": 6.9024049496058275,
+    "srm_p_value": 0.008607987810836262,
+    "zero_round_players": 3994,
+    "zero_round_share": 0.0442847797403231,
+    "gamerounds_p99": 493.0,
+    "gamerounds_max": 49854,
+    "top_3_players": [
+      {
+        "userid": 6390605,
+        "version": "gate_30",
+        "sum_gamerounds": 49854
+      },
+      {
+        "userid": 871500,
+        "version": "gate_30",
+        "sum_gamerounds": 2961
+      },
+      {
+        "userid": 3271615,
+        "version": "gate_40",
+        "sum_gamerounds": 2640
+      }
+    ]
+  },
+  "retention": {
+    "retention_1": {
+      "rate_control": 0.4481879194630872,
+      "rate_treatment": 0.44228274967574577,
+      "diff": -0.005905169787341458,
+      "relative_lift": -0.01317565585974659,
+      "ci_low": -0.012392439449445217,
+      "ci_high": 0.0005820998747623016,
+      "z": -1.7840862247974725,
+      "p_value": 0.07440965529691913,
+      "boot_ci_low": -0.012522074958456633,
+      "boot_ci_high": 0.0006061694094936228,
+      "boot_share_below_zero": 0.9653,
+      "srm_worst_case": {
+        "excess_players_removed": 789,
+        "rate_control": 0.4481879194630872,
+        "rate_treatment": 0.450089485458613,
+        "diff": 0.0019015659955257669,
+        "relative_lift": 0.004242787261655275,
+        "ci_low": -0.004619519652214366,
+        "ci_high": 0.008422651643265899,
+        "z": 0.5715296896855967,
+        "p_value": 0.5676406407519317
+      }
+    },
+    "retention_7": {
+      "rate_control": 0.19020134228187918,
+      "rate_treatment": 0.18200004396667327,
+      "diff": -0.008201298315205913,
+      "relative_lift": -0.043119034896460164,
+      "ci_low": -0.013281552418885545,
+      "ci_high": -0.0031210442115262808,
+      "z": -3.164358912748191,
+      "p_value": 0.001554249975614329,
+      "boot_ci_low": -0.013252895050518142,
+      "boot_ci_high": -0.0032242590988514064,
+      "boot_share_below_zero": 0.9993,
+      "srm_worst_case": {
+        "excess_players_removed": 789,
+        "rate_control": 0.19020134228187918,
+        "rate_treatment": 0.18521252796420581,
+        "diff": -0.004988814317673368,
+        "relative_lift": -0.026229122559397737,
+        "ci_low": -0.010107954210090041,
+        "ci_high": 0.00013032557474330648,
+        "z": -1.9100272868381478,
+        "p_value": 0.056129700085283535
+      }
+    }
+  },
+  "bayesian": {
+    "retention_1": {
+      "prob_control_better": 0.96269,
+      "prob_treatment_better": 0.03731,
+      "expected_loss_if_ship_treatment": 0.005948322413267467,
+      "expected_loss_if_keep_control": 4.9638570333206025e-05,
+      "credible_low": -0.012386664333460185,
+      "credible_high": 0.0005882511746166105
+    },
+    "retention_7": {
+      "prob_control_better": 0.999145,
+      "prob_treatment_better": 0.000855,
+      "expected_loss_if_ship_treatment": 0.008191386414740348,
+      "expected_loss_if_keep_control": 6.177858040158848e-07,
+      "credible_low": -0.013290857986197393,
+      "credible_high": -0.003104816259778656
+    }
+  },
+  "power": {
+    "retention_1": {
+      "mde_abs": 0.009278960839226046,
+      "mde_relative": 0.020703281896446254,
+      "achieved_power_for_observed_diff": 0.43028986329835484,
+      "n_per_group_needed_for_observed_diff": 111191
+    },
+    "retention_7": {
+      "mde_abs": 0.007322661887045199,
+      "mde_relative": 0.038499527917068975,
+      "achieved_power_for_observed_diff": 0.8857246953125647,
+      "n_per_group_needed_for_observed_diff": 35349
+    }
+  },
+  "gamerounds": {
+    "mean_control": 52.45626398210291,
+    "mean_treatment": 51.29877552814966,
+    "median_control": 17.0,
+    "median_treatment": 16.0,
+    "median_diff_ci_low": -1.0,
+    "median_diff_ci_high": 0.0,
+    "mann_whitney_u": 1009027049.5,
+    "mann_whitney_p": 0.05020880772044255,
+    "prob_superiority": 0.49623671809341224
+  },
+  "segments_retention_7": [
+    {
+      "segment": "0-29 rounds",
+      "n_control": 28044,
+      "n_treatment": 28876,
+      "rate_control": 0.042575952075310224,
+      "rate_treatment": 0.039305998060673225,
+      "diff": -0.0032699540146369985,
+      "relative_lift": -0.07680283951966499,
+      "ci_low": -0.00652682334779419,
+      "ci_high": -1.3084681479806626e-05,
+      "z": -1.9688712509667765,
+      "p_value": 0.04896787766058105,
+      "p_value_holm": 0.14690363298174314
+    },
+    {
+      "segment": "30-39 rounds",
+      "n_control": 3090,
+      "n_treatment": 2786,
+      "rate_control": 0.15728155339805824,
+      "rate_treatment": 0.1568557071069634,
+      "diff": -0.00042584629109485017,
+      "relative_lift": -0.0027075412335042944,
+      "ci_low": -0.019057335058530876,
+      "ci_high": 0.018205642476341176,
+      "z": -0.044794897165033036,
+      "p_value": 0.9642707924842816,
+      "p_value_holm": 1.0
+    },
+    {
+      "segment": "40-99 rounds",
+      "n_control": 7398,
+      "n_treatment": 7479,
+      "rate_control": 0.32900783995674504,
+      "rate_treatment": 0.2938895574274636,
+      "diff": -0.03511828252928145,
+      "relative_lift": -0.10673995651258185,
+      "ci_low": -0.04999175526028917,
+      "ci_high": -0.020244809798273734,
+      "z": -4.6251904827323935,
+      "p_value": 3.742542975390998e-06,
+      "p_value_holm": 1.4970171901563992e-05
+    },
+    {
+      "segment": "100+ rounds",
+      "n_control": 6168,
+      "n_treatment": 6348,
+      "rate_control": 0.711413748378729,
+      "rate_treatment": 0.7103024574669187,
+      "diff": -0.001111290911810281,
+      "relative_lift": -0.0015620880455892918,
+      "ci_low": -0.016997976932100794,
+      "ci_high": 0.014775395108480232,
+      "z": -0.13709925494059233,
+      "p_value": 0.890952341379925,
+      "p_value_holm": 1.0
+    }
+  ],
+  "decision": "KEEP gate_30: moving the gate to level 40 significantly lowers day-7 retention, the metric tied to long-term revenue.",
+  "settings": {
+    "alpha": 0.05,
+    "power": 0.8,
+    "n_boot": 10000,
+    "seed": 42
+  }
+}
